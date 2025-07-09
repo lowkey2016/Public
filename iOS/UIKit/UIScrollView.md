@@ -44,3 +44,10 @@ scrollView.contentInsetAdjustmentBehavior = .automatic
 ```
 
 ---
+
+# 怎么监听点击 StatusBar 导致 ScrollView 滑动到顶部？
+
+```
+// UIScrollViewDelegate
+- (void)scrollViewDidScrollToTop:(UIScrollView *)scrollView;      // called when scrolling animation finished. may be called immediately if already at top
+```
